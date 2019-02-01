@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AB5BE46722049B25005B8C6B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB5BE46622049B25005B8C6B /* main.cpp */; };
+		AB5BE47122049B5F005B8C6B /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB5BE46F22049B5F005B8C6B /* Timer.cpp */; };
+		AB5BE47322049BB8005B8C6B /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB5BE47222049BB8005B8C6B /* Runner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		AB5BE46322049B25005B8C6B /* TimerCPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TimerCPP; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB5BE46622049B25005B8C6B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AB5BE46F22049B5F005B8C6B /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		AB5BE47022049B5F005B8C6B /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
+		AB5BE47222049BB8005B8C6B /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,27 @@
 		AB5BE46522049B25005B8C6B /* TimerCPP */ = {
 			isa = PBXGroup;
 			children = (
-				AB5BE46622049B25005B8C6B /* main.cpp */,
+				AB5BE46E22049B4E005B8C6B /* Controller */,
+				AB5BE46D22049B46005B8C6B /* Model */,
 			);
 			path = TimerCPP;
+			sourceTree = "<group>";
+		};
+		AB5BE46D22049B46005B8C6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB5BE46E22049B4E005B8C6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB5BE46F22049B5F005B8C6B /* Timer.cpp */,
+				AB5BE47022049B5F005B8C6B /* Timer.hpp */,
+				AB5BE47222049BB8005B8C6B /* Runner.cpp */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB5BE46722049B25005B8C6B /* main.cpp in Sources */,
+				AB5BE47122049B5F005B8C6B /* Timer.cpp in Sources */,
+				AB5BE47322049BB8005B8C6B /* Runner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
